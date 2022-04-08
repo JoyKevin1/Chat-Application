@@ -44,8 +44,9 @@ h1 {
     color: #fff;
 }
 
-.main-message {
+.main-messages {
     display: flex;
+    flex-direction: column;
     width: 80%;  
 }
 

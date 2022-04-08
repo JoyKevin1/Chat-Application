@@ -23,5 +23,11 @@ socket.emit('chatMessage', msg)
 
 function outputMessage(message) {
     const div = document.createElement('div')
+    div.classList.add('message')
+    div.innerHTML = ` <p class="name">Brad <span class="time">9:12 PM</span></p>
+    <p class="message-text">
+       ${message}
+    </p>`
+    document.querySelector('.main-messages').appendChild(div)
 }
 
