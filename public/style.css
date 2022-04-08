@@ -62,12 +62,18 @@ h1 {
     height: 60px;
     background-color: rgb(91, 91, 248);
 }
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
 
 input {
-    width: 75%;
     height: 35px;
     margin-left: 10px;
     padding-left: 15px;
+    width: 80%;
 }
 
 .send {
@@ -89,3 +95,4 @@ input {
 ul li {
     list-style-type: none;
 }
+

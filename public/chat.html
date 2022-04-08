@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ChatCord App</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="header">
-            <h1>ChatCord</h1>
-            <button class="leave"><a href=index.html>Leave Room</a></button>
 
-        </div>
-        <div class="main">
-            <div class="main-left">
-<h2 class="h2-room-name">Room Name:</h2>
-<div class="room-name">
-    <h2>Javascript</h2>
-</div>
-    <div class="users-holder">
-        <h2 class="users-h2">Users</h2>
-        <ul class="users-list">
-            <li>Brad</li>
-            <li>John</li>
-            <li>Paul</li>
-            <li>Mike</li>
-        </ul>
+<head>
+    <title>ChatCord App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>ChatCord</h1>
+        <button class="leave"><a href=index.html>Leave Room</a></button>
+
     </div>
+    <div class="main">
+        <div class="main-left">
+            <h2 class="h2-room-name">Room Name:</h2>
+            <div class="room-name">
+                <h2>Javascript</h2>
             </div>
-            <div class="main-message">
+            <div class="users-holder">
+                <h2 class="users-h2">Users</h2>
+                <ul class="users-list">
+                    <li>Brad</li>
+                    <li>John</li>
+                    <li>Paul</li>
+                    <li>Mike</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-message">
 
-            </div>
         </div>
-        <div class="footer">
-            <input type="text" placeholder="Enter Message">
+    </div>
+    <div class="footer">
+        <form id="chat-form">
+            <input id="msg" class="input" type="text" placeholder="Enter Message" required autocomplete="off">
             <button class="send">Send</button>
-        </div>
-        <script src="/socket.io/socket.io.js"></script> <!--Frontend Library-->
-        <script src="main.js"></script>
-    </body>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <!--Frontend Library-->
+    <script src="main.js"></script>
+</body>
+
 </html>
