@@ -46,8 +46,41 @@ h1 {
 
 .main-message {
     display: flex;
-    width: 80%;
-    
+    width: 80%;  
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(249, 228, 249);
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.message >* {
+    margin-left: 10px;
+}
+
+.name {
+    font-weight: bold;
+    color:rgb(57, 57, 137)
+}
+
+.time {
+    font-weight: normal;
+    color:rgb(88, 83, 83);
+}
+
+.message-text {
+    font-weight: bold;
+}
+
+span {
+    margin-bottom: 7px;
 }
 
 .main-left >* {
