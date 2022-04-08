@@ -89,11 +89,9 @@ span {
     margin-left: 25px;
 }
 .room-name {
-    background-color: rgb(39, 39, 138);
-    margin-top: -20em;
-    width: 50%;
-    text-align: center;
-    height: fit-content;
+    font-size: 20px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
 }
 
 .footer {
